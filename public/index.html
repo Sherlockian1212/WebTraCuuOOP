@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tra cứu kiến thức môn OOP</title>
+
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+</head>
+<body>
+    <header>
+        <h2>Tra cứu kiến thức môn OOP</h2>
+        
+        <input type="text" id="keySearch"></input>
+        <input type="button" value="Tìm kiếm" id="btnSearch" onclick="searchAPI()"></input>
+
+    </header>
+    <section>
+        <nav>
+          <p>NỘI DUNG BÀI HỌC</p>
+          <div>
+          <p>Bài 1: Giới thiệu về OOP</p>
+          <ul>
+            <li><a href="#" onclick="select_item(1)">Khái niệm cơ bản về OOP</a></li>
+            <li><a href="#" onclick="select_item(2)">Tính chất của OOP</a></li>
+            <li><a href="#" onclick="select_item(3)">So sánh với lập trình hướng thủ tục</a></li>
+          </ul>
+          <p>Bài 2: Class và Object</p>
+          <ul>
+            <li><a href="#" onclick="select_item(4)">Khái niệm về Class và Object</a></li>
+            <li><a href="#" onclick="select_item(5)">Các thành phần của Class</a></li>
+            <li><a href="#" onclick="select_item(6)">Phương thức khởi tạo</a></li>
+            <li><a href="#" onclick="select_item(7)">Ví dụ minh họa</a></li>
+          </ul>
+          <p>Bài 3: Kế thừa</p>
+          <ul>
+            <li><a href="#" onclick="select_item(8)">Khái niệm về Kế thừa</a></li>
+            <li><a href="#" onclick="select_item(9)">Ví dụ minh họa</a></li>
+          </ul>
+          <p>Bài 4: Đa hình</p>
+          <ul>
+            <li><a href="#" onclick="select_item(10)">Khái niệm về Đa hình</a></li>
+            <li><a href="#" onclick="select_item(11)">Ví dụ minh họa</a></li>
+          </ul>
+          </div>
+          <p>PHÂN LOẠI KIẾN THỨC</p>
+          <div>
+            
+            <p>Khái niệm OOP</p>
+            <ul>
+              <li><a href="#" onclick="select_item(12)">Tính đóng gói (Encapsulation)</a></li>
+              <li><a href="#" onclick="select_item(13)">Tính kế thừa (Inheritance)</a></li>
+              <li><a href="#" onclick="select_item(14)">Tính đa hình (Polymorphism)</a></li>
+              <li><a href="#" onclick="select_item(15)">Lớp và đối tượng (Class and Object)</a></li>
+            </ul>
+            <p>Tính chất OOP</p>
+            <ul>
+              <li><a href="#" onclick="select_item(16)">Tính trừu tượng (Abstraction)</a></li>
+              <li><a href="#" onclick="select_item(17)">Tính tái sử dụng (Reuse)</a></li>
+              <li><a href="#" onclick="select_item(18)">Tính mở rộng (Extension)</a></li>
+              <li><a href="#" onclick="select_item(19)">Tính linh hoạt (Flexibility)</a></li>
+              <li><a href="#" onclick="select_item(20)">Tính bảo mật (Security)</a></li>
+            </ul>
+          </div>
+          <p>CÁC DẠNG BÀI TẬP</p>  
+          <div>
+            <ul>
+              <li><a href="#" onclick="select_item(21)">Các bài tập về kế thừa (Inheritance)</a></li>
+              <li><a href="#" onclick="select_item(22)">Các bài tập về đa hình (Polymorphism)</a></li>
+              <li><a href="#" onclick="select_item(23)">Các bài tập về tính đóng gói (Encapsulation)</a></li>
+            </ul>
+          </div>
+        </nav>
+        
+        <article>
+          <h1>Nội dung</h1>
+          <iframe id="file" src="" width="100%" height="650px">
+          </iframe>
+        </article>
+
+        <!--Kiến thức liên quan
+        
+        -->
+        <nav id="rknowledge">
+          <ul></ul>
+        </nav>
+      </section>
+</body>
+</html>
+
